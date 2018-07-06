@@ -18,6 +18,11 @@
 - Filter relations
 - Google Maps
 
+### Badges:
+![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/azmg5/wimo/badges/quality-score.png?b=master)
+![Build](https://scrutinizer-ci.com/g/azmg5/wimo/badges/build.png?b=master)
+![Code intelligence](https://scrutinizer-ci.com/g/azmg5/wimo/badges/code-intelligence.svg?b=master)
+
 ### Installation
 `git clone https://github.com/azmg5/wimo.git`
 
