@@ -22,9 +22,9 @@ export default {
   name: "GoogleMap",
   data() {
     return {
-      // default to Montreal to keep it simple
+      // default to Dubai to keep it simple
       // change this to whatever makes sense
-      center: { lat: 45.508, lng: -73.587 },
+      center: { lat: 25.204849, lng: 55.270783 },
       markers: [],
       places: [],
       fromLat: 0,

@@ -11,21 +11,21 @@
         <div class="panel-body">
             <div class="row">
                 <div class="col-sm-4">
-                    <label>Company</label>
+                    <label>courier</label>
                     <p>{{model.courier}}</p>
-                    <label>Name</label>
+                    <label>driverName</label>
                     <p>{{model.driverName}}</p>
                 </div>
                 <div class="col-sm-4">
-                    <label>Email Address</label>
+                    <label>description</label>
                     <p>{{model.description}}</p>
-                    <label>Phone Number</label>
+                    <label>startedAt</label>
                     <p>{{model.startedAt}}</p>
                 </div>
                 <div class="col-sm-4">
-                    <label>Created At</label>
+                    <label>finishedAt</label>
                     <p>{{model.finishedAt}}</p>
-                    <label>Address</label>
+                    <label>status</label>
                     <pre>{{model.status}}</pre>
                 </div>
             </div>

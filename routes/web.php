@@ -5,8 +5,6 @@ Route::get('/', function () {
 });
 
 Route::group(['prefix' => 'api/'], function() {
-    Route::resource('customer', 'CustomerController');
-    Route::resource('invoice', 'InvoiceController');
     Route::resource('tasks', 'TasksController');
     Route::get('tasks/{id}/map', 'TasksController@map');
 

@@ -6,8 +6,6 @@
             </div>
             <ul class="nav navbar-nav navbar-left">
                 <li><router-link to="/">Tasks</router-link></li>
-                <!-- <li><router-link to="/invoice">Invoice</router-link></li>
-                <li><router-link to="/tasks">Tasks</router-link></li> -->
             </ul>
         </div>
         <router-view></router-view>
