@@ -29,10 +29,10 @@ class TasksController extends Controller
   {
       $task = Tasks::findOrFail($id);
 
-      $fromLat = "";
-      $fromLng = "";
-      $toLat = "";
-      $toLng = "";
+      $fromLat = "25.204849";
+      $fromLng = "55.270783";
+      $toLat = "25.204849";
+      $toLng = "55.270783";
       if($task != null)
       {
         if($task->fromLocation != null && $task->fromLocation != '')
