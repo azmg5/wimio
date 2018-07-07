@@ -29,3 +29,5 @@
 `cd wimo`
 
 `composer install`
+
+`php artisan migrate`

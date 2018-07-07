@@ -35,13 +35,23 @@ class TasksController extends Controller
       $toLng = "";
       if($task != null)
       {
-        $temp = (explode(",",$task->fromLocation));
-        $fromLat = $temp[0];
-        $fromLng = $temp[1];
+        if($task->fromLocation != null && $task->fromLocation != '')
+        {
+          $temp = (explode(",",$task->fromLocation));
+          if(sizeof($temp) >= 2){
+            $fromLat = $temp[0];
+            $fromLng = $temp[1];
+          }
+        }
 
-        $temp = (explode(",", $task->toLocation));
-        $toLat = $temp[0];
-        $toLng = $temp[1];
+        if($task->toLocation != null && $task->toLocation != '')
+        {
+          $temp = (explode(",", $task->toLocation));
+          if(sizeof($temp) >= 2){
+            $toLat = $temp[0];
+            $toLng = $temp[1];
+          }
+        }
       }
 
       return response()
@@ -80,7 +90,7 @@ class TasksController extends Controller
 
       return response()
           ->json([
-              'form' => $customer,
+              'form' => $task,
               'option' => []
           ]);
   }
@@ -91,8 +101,8 @@ class TasksController extends Controller
           'status' => 'required'
       ]);
 
-      $customer = Tasks::findOrFail($id);
-      $customer->update($request->all());
+      $task = Tasks::findOrFail($id);
+      $task->update($request->all());
 
       return response()
           ->json([
